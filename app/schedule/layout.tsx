@@ -14,7 +14,8 @@ import {
   } from 'tabler-icons-react';
   import {Title, Tooltip, UnstyledButton} from '@mantine/core'
   import classes from './ScheduleLayout.module.css'
-  import ScheduleLinksGroup from './components/ScheduleLayout/Links';
+  import { DndProvider } from 'react-dnd'
+
 
 export default function ScheduleLayout({ children }: { children: any }) {
     const [opened, { toggle }] = useDisclosure();
@@ -64,8 +65,11 @@ export default function ScheduleLayout({ children }: { children: any }) {
                 />
             </AppShell.Header>
             <AppShell.Navbar p="md">
-                <ScheduleLinksGroup/>
             </AppShell.Navbar>
+            <AppShell.Main>
+                    {children}
+            </AppShell.Main>
         </AppShell>
+        
     )
 }

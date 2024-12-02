@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/schedule/components/ScheduleTable/DragDrop.jsx", "app/schedule/components/ScheduleTable/DragDropItemPaper.jsx"  ],
   "exclude": [
     "node_modules"
   ]
